@@ -1,0 +1,13 @@
+apps:
+  - name: "geo_etl"
+    deploy_name: "geo_etl"
+    group: "geo_etl"
+    routes:
+      - name: "geo_etl"
+        hostname: "geo_etl-dev"
+        port: "8080"
+        path: ""
+        certificate: ""
+    env_vars:
+      - DJANGO_DEBUG='True'
+      - FILE_DIR='./files'
