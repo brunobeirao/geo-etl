@@ -11,4 +11,5 @@ settings.configure()
 class TestRequests(TestCase):
 
     def test_post(self):
-        service.run()
+        teste = service.run()
+        print(teste)
